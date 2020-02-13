@@ -57,6 +57,7 @@ body {
 
 .info {
     padding: 60px 0;
+    margin: 0 20px;
 }
 
 .container {
@@ -164,6 +165,10 @@ body {
     padding: 15px;
     list-style: none;
     color: #6c6c6c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 .info-ph-text ul {
@@ -186,4 +191,104 @@ body {
     padding: 10px;
     text-transform: uppercase;
     border-radius: 10px;
+}
+
+.footer {
+    background: linear-gradient(to right bottom, rgba(255, 0, 0, 0.199), rgba(0, 0, 0, 0.562)), url('https://images.pexels.com/photos/674268/pexels-photo-674268.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')no-repeat center center/cover;
+    width: 100%;
+    background-attachment: fixed;
+    height: 75vh;
+    margin-top: 60px;
+}
+
+.container-footer {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    top: 40px;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.form {
+    float: left;
+    margin: 0 90px;
+}
+
+.form h1 {
+    color: #d67345;
+    text-align: center;
+    font-size: 2.25em;
+}
+
+.form input[type=text] {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #6c6c6c;
+    font-size: 0.875em;
+}
+
+.form .btn {
+    text-decoration: none;
+    color: #6c6c6c;
+    border: 3px solid #6c6c6c;
+    padding: 15px;
+    width: 300px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.form .btn:hover {
+    border: 3px solid #d67345;
+}
+
+.footer-info h1 {
+    color: #d67345;
+    font-size: 2.25em;
+    margin-bottom: 30px;
+}
+
+.footer-info ul {
+    list-style-type: none;
+}
+
+.footer-info ul li {
+    font-size: 1.25em;
+    color: #6c6c6c;
+    margin-bottom: 10px;
+}
+
+.footer-info ul li img {
+    width: 40px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.footer-info ul li img:hover {
+    background: #d67345;
+    border-radius: 50%;
+}
+
+@media(max-width: 500px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .info-text {
+        margin-bottom: 40px;
+    }
 }
